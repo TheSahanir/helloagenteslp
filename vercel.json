@@ -1,14 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "server.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.ts"
-    }
-  ]
+  "framework": "nextjs",
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": ".next"
 }
